@@ -375,7 +375,7 @@ section .section-container{
     overflow: hidden;
     position: relative;
     box-shadow: var(--shadow);
-    background-color: #161616;
+    background-color: var(--blackColor);
 }
 
 /* <a href="https://www.flaticon.es/iconos-gratis/perro" title="perro iconos">Perro iconos creados por Freepik - Flaticon</a> */
@@ -388,12 +388,13 @@ section .section-container{
 
 }
 
-.iconbox i{
+
+.iconbox{
 
     font-size: 200px;
-    color: #D82148;
-    
+    color: var(--redColor);
 }
+
 /* .portfolio .box-container .box img{
     width: 100%;
     height: 100%;
