@@ -1,0 +1,27 @@
+.boxDropMenu {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.item_d {
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    padding-right: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.link_d {
+    font-family: var(--font-family-poppins);
+    font-weight: 500;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.link_d:hover {
+    transform: translateX(-5px);
+    color: var(--color-text-success);
+    color: var(--color-secondary);
+}

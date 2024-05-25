@@ -1,0 +1,25 @@
+
+#root {
+    background-color: inherit;
+}
+
+.sectionTitle{
+  font-family: var(--font-family-montserrat); 
+  width: 100%;
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+  .sectionTitle{
+     font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sectionTitle{
+     font-size: 26px;
+  }
+}
