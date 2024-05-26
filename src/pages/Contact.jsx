@@ -5,7 +5,8 @@ import axios from 'axios'
 
 import '../styles/Contact.css'
 
-const USER_REGEX = /^[A-z]{3,30}$/
+
+const USER_REGEX = /^[A-Za-zÁÉÍÓÚáéíóúÜü\s,'.-]{3,30}$/
 const MSG_REGEX = /^.{3,200}$/
 const EMAIL_REGEX = /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/
 
