@@ -1,11 +1,11 @@
 import { useLanguage } from '../hooks/useLanguage'
 import passport from '../assets/images/passport.svg'
-import cv_ES from '../assets/cv/CV-DesarrolladorSoftware-JefoneMonge.pdf'
-import cv_EN from '../assets/cv/CV-SoftwareDeveloper-JefoneMonge.pdf'
-
 import '../styles/Home.css'
 
 export const Home = () => {
+
+  const URL_EN = "https://drive.proton.me/urls/0B73CHQWZ8#9t2SJCTfQQjz"
+  const URL_ES = "https://drive.proton.me/urls/9ZB80587MC#3e2pyMBpui4O"
 
   const {translation, lang} = useLanguage()
 
@@ -13,9 +13,9 @@ export const Home = () => {
     
     console.log("Lang is ",lang)
     if(lang==='es'){
-      window.open(cv_ES, '_blank')
+      window.open(URL_ES, '_blank')
     }else{
-      window.open(cv_EN, '_blank')
+      window.open(URL_EN, '_blank')
     }
   }
 
