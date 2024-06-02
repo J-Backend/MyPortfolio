@@ -56,14 +56,6 @@ export const translations = {
                     text:"Desarrollador de Software Junior",
                     style:"primary"
                 },{
-                    id:3,
-                    text:"con enfoque en",
-                    style:""
-                },{
-                    id:4,
-                    text:"soluciones tecnológicas.",
-                    style:""
-                },{
                     id:5,
                     text:"Mi camino",
                     style:""
@@ -280,14 +272,6 @@ export const translations = {
                     id:2,
                     text:"Junior Software Developer",
                     style:"primary"
-                },{
-                    id:3,
-                    text:"focus on",
-                    style:""
-                },{
-                    id:4,
-                    text:"technological solutions.",
-                    style:""
                 },{
                     id:5,
                     text:"My journey",
