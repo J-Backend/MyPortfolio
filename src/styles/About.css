@@ -67,16 +67,21 @@
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     .boxAbout{
         min-width: 320px;
+        justify-content: start;
     }
+    .boxAbout h2{
+        padding: 30px 0 8px 0;
+    }
+
     .boxAbout .paragraph{
         width: 100%;
-        padding: 14px;
+        padding: 16px;
     }
     .paragraph p{
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
         margin: 0 0.6rem 0 0.6rem;
     }

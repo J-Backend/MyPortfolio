@@ -1,5 +1,8 @@
 import { useLanguage } from '../hooks/useLanguage'
 import passport from '../assets/images/passport.svg'
+
+
+
 import '../styles/Home.css'
 
 export const Home = () => {
@@ -21,11 +24,12 @@ export const Home = () => {
 
   return (
     <div className='boxHome'>
-    
+     
       <h1 className='title'>{translation.home.title}</h1>
       <h2 className='subtitle'>{translation.home.subtitle}</h2>
       <div className='boxlogo'>
-         <img  className='logo' src={passport} alt="avatar" />
+        <img  className='logo' src={passport} alt="avatar" /> 
+         
       </div>
    
       <button onClick={handleDownload} className='btnDownload'>{translation.home.action}</button>
