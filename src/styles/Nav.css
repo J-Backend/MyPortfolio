@@ -1,0 +1,140 @@
+.boxNav {
+    height: 70px;
+    height: 90px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-text-primary);
+}
+
+.boxIcons {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxIcons .linkIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 45px;
+}
+
+.linkIcon i {
+    font-size: 18px;
+    color: var(--bg-secondary);
+}
+
+.linkIcon i:hover {
+
+    color: var(--color-text-info);
+}
+
+.boxMain {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.iconMenuVisibility {
+    display: none;
+}
+
+.boxMenu {
+    width: 45rem;
+    height: 100%;
+}
+
+.link {
+    text-transform: lowercase;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--bg-secondary);
+
+}
+
+.link i {
+    font-size: 20px;
+}
+
+.link:hover {
+    color: var(--color-text-info);
+}
+
+.boxDrop {
+    width: 100%;
+    margin-top: 62px;
+    position: absolute;
+    top: 0;
+
+}
+
+.dropBtn {
+    background-color: var(--color-text-primary);
+    color: var(--color-primary);
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    .boxMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .boxDrop {
+        display: none;
+    }
+
+    .iconCloseVisibility {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .boxMenu {
+        width: 36rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .boxNav {
+        height: 62px;
+    }
+
+
+    .boxMain {
+        width: 100%;
+        height: 62px;
+        padding-right: 2rem;
+    }
+
+    .boxMenu {
+        display: none;
+    }
+
+    .iconMenuVisibility {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .boxNav {
+        min-width: 320px;
+        width: 100%;
+    }
+}

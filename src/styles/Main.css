@@ -1,0 +1,237 @@
+.boxHome {
+    background-color: var(--color-primary);
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.boxTitles {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.boxTop {
+    margin-left: 30%;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.topTitle {
+    display: flex;
+    align-items: center;
+
+}
+
+.topTitle .hello {
+    font-size: 35px;
+    font-family: var(--font-family-montserrat);
+    text-transform: uppercase;
+    width: 10.9rem;
+    font-weight: 500;
+    transition: transform .3s;
+}
+
+.topTitle .line {
+    width: 26rem;
+    height: 1px;
+    border-bottom: 2px solid var(--color-text-primary);
+    transition: transform .3s;
+}
+
+.title {
+    font-family: var(--font-family-montserrat);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 70px;
+    transition: transform .3s;
+    color: var(--color-text-primary);
+}
+
+.subtitle {
+    font-family: var(--font-family-montserrat);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    transition: transform .3s;
+}
+
+
+.btnCV {
+    text-align: center;
+    height: 50px;
+    width: 143.8px;
+    border-radius: 5px;
+    font-family: var(--font-family-montserrat);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--color-secondary);
+}
+
+
+.topTitle .hello:hover {
+    transform: translateY(-3px);
+}
+
+.title:hover {
+    transform: translateY(-3px);
+}
+
+.subtitle:hover {
+    transform: translateY(-3px);
+}
+
+.btnCV:hover {
+
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-text-primary);
+}
+
+
+@media only screen and (max-width: 1030px) {
+    .boxHome {
+        padding-top: 62px;
+    }
+
+    .topTitle .hello {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .btnCV {
+        font-size: 15px;
+        height: 45px;
+        width: 130px
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .boxHome {
+        height: calc(60rem - 28px);
+    }
+}
+
+
+@media only screen and (max-width: 810px) {
+
+    .topTitle .hello {
+        font-size: 25.5px;
+    }
+
+    .title {
+        font-size: 46px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .btnCV {
+        font-size: 14px;
+        height: 40px;
+        width: 110px
+    }
+
+ 
+}
+
+@media only screen and (max-width: 681px) {
+
+    .boxHome {
+        flex-direction: column;
+        padding-top: 250px;
+
+    }
+
+    .boxTitles {
+        width: 100%;
+        align-items: start;
+
+    }
+
+    .boxTop {
+        margin: 0;
+        height: 40%;
+    }
+
+    .topTitle {
+        flex-direction: column-reverse;
+        height: 50px;
+        justify-content: space-between;
+
+    }
+
+    .topTitle .line {
+        width: 15rem;
+    }
+
+    .topTitle .hello {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .boxBtn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .boxHome {
+        min-width: 320px;
+    }
+
+    .topTitle .hello {
+        font-size: 23px;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .btnCV {
+        font-size: 13px;
+        height: 40px;
+        width: 100px
+    }
+
+
+}

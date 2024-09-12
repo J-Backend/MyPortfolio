@@ -1,0 +1,43 @@
+.boxTabSection {
+    background-color: var(--color-text-primary);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+
+.itemSection button {
+    color: var(--color-primary);
+    font-family: var(--font-family-montserrat);
+    text-transform: lowercase;
+    font-size: 18px;
+}
+
+.itemSection button:hover {
+    color: var(--color-primary);
+}
+
+
+.itemSection button:focus {
+    color: var(--color-primary);
+}
+
+.sectionActive {
+    border-radius: 4px;
+    background-color: var(--color-secondary);
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .itemSection button {
+        font-size: 17px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .itemSection button {
+        font-size: 15.5px;
+    }
+
+}

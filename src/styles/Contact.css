@@ -1,0 +1,236 @@
+.boxContact {
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-text-primary);
+
+
+}
+
+.titleContact {
+    font-size: 90px;
+    color: var(--color-primary);
+    font-family: var(--font-family-montserrat);
+    font-weight: 600;
+    text-transform: lowercase;
+    
+}
+
+.form {
+    height: 500px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, var(--color-text-primary) 0%, var(--color-text-secondary) 70%), radial-gradient(circle at top left, var(--color-text-primary), var(--color-text-secondary));
+}
+
+.form .group {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+
+}
+
+.form .groupMessage {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+
+}
+
+.group .input {
+    border: none;
+    outline: none;
+    font-family: var(--font-family-montserrat);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: var(--color-text-primary);
+    color: var(--color-primary);
+
+
+}
+
+.group .input::placeholder {
+    font-family: var(--font-family-montserrat);
+    color: var(--color-primary);
+    text-transform: lowercase;
+}
+
+
+.group #message {
+    height: 100px;
+}
+
+.group .boxAlert {
+    text-align: end;
+    height: 30px;
+    display: flex;
+    align-items: end;
+
+}
+
+.group span {
+    font-family: var(--font-family-roboto);
+    font-size: 16px;
+    color: var(--color-text-info);
+    width: 100%;
+    text-align: end;
+    text-transform: lowercase;
+}
+
+.boxButton {
+    width: 80%;
+    height: 10%;
+    text-align: center;
+}
+
+.boxButton button {
+    font-size: 20px;
+    text-transform: lowercase;
+    color: var(--color-primary);
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+    font-family: var(--font-family-montserrat);
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .valid {
+    background-color: var(--color-text-primary);
+}
+
+.form .valid i {
+    font-size: 50px;
+    color: var(--color-text-secondary);
+    font-weight: 900;
+}
+
+.form .invalid {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .titleContact {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .form {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .form {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .form {
+        width: 75%;
+    }
+    .titleContact {
+        font-size: 70px;
+    }
+
+    .form .boxButton {
+
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .group .input::placeholder {
+        font-size: 18px;
+    }
+
+    .group .input {
+        font-size: 18px;
+    }
+
+    .group .message {
+        font-size: 18px;
+    }
+
+    .form button {
+        font-size: 18px;
+    }
+
+    .group span {
+
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .form {
+        width: 80%;
+    }
+
+    .group .input::placeholder {
+        font-size: 16px;
+    }
+
+    .group .input {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .group .message {
+        font-size: 16px;
+    }
+
+    .form button {
+        font-size: 16px;
+        width: 80px;
+    }
+
+    .group span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .titleContact {
+        font-size: 65x;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .titleContact {
+        font-size: 56px;
+    }
+
+    .boxContact {
+        min-width: 320px;
+    }
+}

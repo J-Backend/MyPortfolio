@@ -1,0 +1,91 @@
+.boxLang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 0 0 1rem;
+  background-color: inherit;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.slider {
+  position: relative;
+  width: 112px;
+  /* w-28 */
+  width: 56px;
+  height: 56px;
+  /* h-14 */
+  border-radius: 9999px;
+  /* To make the slider rounded */
+  transition: outline 0.1s, transform 0.5s;
+}
+
+.slider::after {
+  content: '';
+  /* en */
+  position: absolute;
+  width: 48px;
+  /* w-12 */
+  height: 48px;
+  /* h-12 */
+  top: 4px;
+  /* top-1 */
+  left: 4px;
+  /* left-1 */
+  color: var(--color-primary);
+  font-weight: bold;
+  /* font-bold */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* Make the slider knob circular */
+  transition: transform 0.5s, content 0.5s;
+  font-family: var(--font-family-montserrat);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input[type="checkbox"]:checked+.slider::after {
+  transform: translateX(56px);
+  /* translate-x-14 */
+  transform: translateX(0px);
+  content: '';
+}
+
+.toggle-switch .boxIcon{
+  width: 40px;
+  height: 40px;
+  
+  position: relative;
+  left: -45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-switch .boxIcon i{
+  font-size: 18px;
+  color: var(--bg-secondary);
+}
+
+ .boxIcon i :hover{
+  color: var(--color-text-info);
+}

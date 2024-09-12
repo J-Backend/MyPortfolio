@@ -1,0 +1,33 @@
+.technoSec {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.technoSec .techMS {
+    background-color: var(--color-text-primary);
+    display: flex;
+    margin: 0 5px;
+    flex-direction: row;
+    width: 10%;
+    min-width: 100px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--color-text-info);
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.3);
+}
+
+.techMS img {
+    width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .techMS img {
+        width: 65px;
+    }
+}

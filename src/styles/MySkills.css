@@ -1,0 +1,73 @@
+.boxMySkills {
+    background-color: var(--color-text-primary);
+    width: 100%;
+    height: calc(100vh);
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.boxTitleMS {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxTitleMS .titleMS {
+    font-size: 90px;
+    font-family: var(--font-family-montserrat);
+    font-weight: 600;
+    text-transform: lowercase;
+    color: var(--color-primary);
+}
+
+.titleSecMS {
+    width: 100%;
+}
+
+.boxTechnos {
+    height: 600px;
+}
+
+.boxTab {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .boxTitleMS .titleMS {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .boxMySkills {
+        padding-top: 62px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .boxMySkills {
+        min-width: 320px;
+    }
+
+    .boxTitleMS .titleMS {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .boxTitleMS .titleMS {
+        font-size: 56px;
+    }
+
+}

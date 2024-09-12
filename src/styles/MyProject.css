@@ -1,0 +1,110 @@
+.boxWork {
+    height: 510px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: var(--color-primary);
+    
+
+}
+
+.boxName {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxName .boxRepo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.boxName .boxRepo :hover {
+    color: #9081b5;
+}
+
+.boxRepo i {
+    color: var(--color-secondary);
+    font-size: 30px;
+}
+
+.boxName .name {
+    font-family: var(--font-family-montserrat);
+    color: var(--color-text-info);
+    text-transform: lowercase;
+    font-size: 24px;
+}
+
+.line {
+    height: 0.5px;
+    border-bottom: 1px solid var(--bg-secondary);
+}
+
+.boxType {
+    width: 100%;
+    display: flex;
+}
+
+.boxType i {
+    color: var(--color-text-secondary);
+    position: relative;
+    font-size: 20px;
+    top: 4px;
+}
+
+.boxType .type {
+    font-family: var(--font-family-poppins);
+    color: var(--color-text-info);
+    text-transform: lowercase;
+    font-size: 16px;
+    position: relative;
+    top: 8px;
+    margin-left: 0.5rem;
+}
+
+.boxInfo {
+    height: 80px;
+    display: flex;
+    
+    align-items: center;
+}
+
+.boxInfo p {
+    color: var(--color-text-info);
+    text-transform: lowercase;
+    font-size: 14.5px;
+    font-family: var(--font-family-poppins);
+}
+
+.boxTools {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 5px 5px 5px;
+}
+
+.boxTools .tool {
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 5px 2.5px;
+    background-color: var(--bg-secondary);
+}
+
+.boxTools .tool:hover {
+    background-image: none;
+}
+
+.boxTools .tool>p {
+    position: relative;
+    top: 6px;
+    color: #9081b5;
+    text-transform: lowercase;
+    font-size: 14.5px;
+
+}
