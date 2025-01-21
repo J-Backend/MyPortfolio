@@ -3,8 +3,8 @@ import { LangContext } from "../context/LangContext";
 
 export const useLanguage = () => {
 
-    const {translation, handleLang, lang} = useContext(LangContext)
-    
+  const { translation, handleLang, lang } = useContext(LangContext)
+
   return {
     translation,
     handleLang,

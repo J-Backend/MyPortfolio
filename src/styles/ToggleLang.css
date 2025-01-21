@@ -89,3 +89,7 @@ input[type="checkbox"]:checked+.slider::after {
  .boxIcon i :hover{
   color: var(--color-text-info);
 }
+
+.boxIcon img{
+  height: 22px;
+}

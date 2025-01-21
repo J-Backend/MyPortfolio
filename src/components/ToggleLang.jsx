@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import { useLanguage } from '../hooks/useLanguage'
+import langIcon from '../assets/images/translateicon.svg'
 import '../styles/ToggleLang.css'
 
 export const ToggleLang = () => {
@@ -31,7 +32,8 @@ export const ToggleLang = () => {
                     
                 </div>
                 <div className='boxIcon'>
-                <i className="bi bi-translate"></i>
+                {/* <i className="bi bi-translate"></i> */}
+                <img src={langIcon} alt="" />
                 </div>
                 
             </label>

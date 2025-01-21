@@ -6,7 +6,7 @@ export const initialLang = "en"
 
 import csharp from '../assets/images/csharp.svg'
 import sqlserver from '../assets/images/sqlserver.svg'
-import mdotnet from '../assets/images/mdotnet.svg'
+import dotnet from '../assets/images/mdotnet.svg'
 import angular from '../assets/images/angular.svg'
 import react from '../assets/images/react.svg'
 import typescript from '../assets/images/typescript.svg'
@@ -23,34 +23,48 @@ import github from '../assets/images/github.svg'
 import vscode from '../assets/images/vscode.svg'
 import mongodb from '../assets/images/mongodb.svg'
 import express from '../assets/images/express.svg'
-
+import java from '../assets/images/java.svg'
+import spring from '../assets/images/spring.svg'
+import mysql from '../assets/images/mysql.svg'
+import intellij from '../assets/images/intellij.svg'
+import git from '../assets/images/git.svg'
+import insomnia from '../assets/images/insomnia.svg'
+import materialui from '../assets/images/materialui.svg'
+import ngbootstrap from '../assets/images/ngbootstrap.svg'
 
 
 const listBackend = [
-    csharp,
-    mdotnet,
-    node,
-    sql,
-    mongodb,
-    aspnetcore,
-    express
-
+    {name: "Java", logo:java},
+    {name: "Spring", logo:spring},
+    {name: "Node JS", logo:node},
+    {name: "Express", logo:express},
+    {name: "SQL", logo:sql},
+    {name: "MongoDB", logo:mongodb},
+    {name: "CSharp", logo:csharp},
+    {name: ".NET", logo:dotnet},
+    {name: "ASP.NETCore", logo:aspnetcore}
 ]
 const listFrontend = [
-    typescript,
-    js,
-    angular,
-    react,
-    html,
-    css,
-    bootstrap,
+    {name: "JavaScript", logo:js},
+    {name: "TypeScript", logo:typescript},
+    {name: "Angular", logo:angular},
+    {name: "React", logo:react},
+    {name: "HTML", logo:html},
+    {name: "CSS", logo:css},
+    {name: "Bootstrap", logo:bootstrap},
+    {name: "NG Bootstrap", logo:ngbootstrap},
+    {name: "Material UI", logo:materialui}
 ]
 const listTools = [
-    sqlserver,
-    visual,
-    vscode,
-    github,
-    postman
+    {name: "SQL Server", logo:sqlserver},
+    {name: "MySQL", logo:mysql},
+    {name: "GitHub", logo:github},
+    {name: "Git", logo:git},
+    {name: "VS Code", logo:vscode},
+    {name: "IntelliJ", logo:intellij},
+    {name: "Visual Studio", logo:visual},
+    {name: "Insomnia", logo:insomnia},
+    {name: "Postman", logo:postman}
 ]
 
 export const translations = {
@@ -59,6 +73,7 @@ export const translations = {
 
         nav: {
             languaje: "Español",
+            toogle:"Traducir",
             menu: [
                 {
                     id:1,
@@ -96,7 +111,7 @@ export const translations = {
         about: {
             title: "Acerca",
             subtitle:"Soy desarrollador, sede en Costa Rica",
-            description:"Desde 2022, trabajo en desarrollo de software como freelancer. Me formé como Ingeniero de Biosistemas, pero me gustaba más la programación. En 2020, durante la pandemia, decidí estudiar programación en la universidad. Ahora estoy trabajando en mi proyecto final para graduarme. Estoy creando un sistema de inventario. Cuando no estoy programando, me gusta hacer ejercicio, tocar música o aprender cosas nuevas."
+            description:"Desde 2022, me dedico al desarrollo de software. Aunque me formé como Ingeniero de Biosistemas, siempre me atrajo más la programación, por lo que en 2020, durante la pandemia, decidí estudiar Ingeniería Informática, carrera que culminé satisfactoriamente en 2024. Fuera del ámbito profesional, tengo otros intereses relacionados con la actividad física, disfruto de la música y me gusta mantener un aprendizaje continuo."
         },
         skills:{
             title:"Destrezas",
@@ -202,6 +217,7 @@ export const translations = {
     en: {
         nav: {
             languaje: "English",
+            toogle:"Translate",
             menu: [
                 {
                     id:1,
@@ -239,7 +255,7 @@ export const translations = {
         about: {
             title: "About",
             subtitle:"I'm developer based in Costa Rica",
-            description:"Since 2022, I have been working as a freelance software developer. Although I originally trained as a Biosystems Engineer, I found that I was more passionate about programming. In 2020, during the pandemic, I decided to study programming at university. I am now working on my final project for graduation, which involves developing an inventory system. Outside of programming, I enjoy exercising, playing music, and exploring new topics."
+            description:"Since 2022, I have been working as a software developer. Although I graduated as a Biosystems Engineer, I have always been more interested in programming. That's why, in 2020, during the pandemic, I decided to study Computer Engineering, a degree I successfully completed in 2024. Outside of work, I have other interests related to physical activity, I enjoy music, and I like to keep learning continuously."
         },
         skills:{
             title:"Skills",

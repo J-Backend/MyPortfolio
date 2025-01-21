@@ -61,7 +61,7 @@ export const Nav = () => {
           }
           <li className='item'>
             <a className='link' target="_blank" rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/jeff-monge-m-0b1391260/">
+              href="https://www.linkedin.com/in/jeff-cr/">
               <i className="bi bi-linkedin"></i>
             </a>
           </li>
